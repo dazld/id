@@ -69,6 +69,7 @@ function bundle() {
         .on('error', function(error) {
             gutil.log(gutil.colors.red(error.stack));
             gutil.log(gutil.colors.red('Error: (' + error.plugin + ') - ' + error.message));
+            this.emit('end');
         })
         .pipe(source('bundle.js'))
         .pipe(buffer())

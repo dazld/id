@@ -1,3 +1,7 @@
-body {
-    background: blue;
+@import "../../node_modules/normalize.scss/normalize.scss";
+
+* {
+    box-sizing: border-box;
 }
+
+
