@@ -11,6 +11,8 @@ let debug = require('gulp-debug');
 let size = require('gulp-size');
 
 let sass = require('gulp-sass');
+let csso = require('gulp-csso');
+let autoprefixer = require('gulp-autoprefixer');
 
 let spawn = require('child_process').spawn;
 let resolve = require('path').resolve;
@@ -91,6 +93,10 @@ function compileSass(){
     return gulp.src(ALL_SASS)
         .pipe(debug())
         .pipe(sass().on('error', sass.logError))
+        .pipe(csso())
+        .pipe(autoprefixer({
+            cascade: false
+        }))
         .pipe(size())
         .pipe(debug())
         .pipe(gulp.dest(CSS_FOLDER))
