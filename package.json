@@ -1,0 +1,39 @@
+{
+  "name": "id",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babelify": "^6.3.0",
+    "browserify": "^11.2.0",
+    "connect-livereload": "^0.5.3",
+    "envify": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.2",
+    "gulp-connect": "^2.2.0",
+    "gulp-csso": "^1.0.0",
+    "gulp-debug": "^2.1.2",
+    "gulp-if": "^2.0.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-notify": "^2.2.0",
+    "gulp-plumber": "^1.0.1",
+    "gulp-rev": "^6.0.1",
+    "gulp-rev-css-url": "^0.1.0",
+    "gulp-sass": "dazld/gulp-sass#extra-math",
+    "gulp-size": "^2.0.0",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.5",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.4.0",
+    "yargs": "^3.27.0"
+  },
+  "dependencies": {
+    "lodash": "^3.10.1"
+  }
+}
